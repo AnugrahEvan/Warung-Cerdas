@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Warung Cerdas - Warung Online</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo-toko">
+                <img src="images/logo.png" alt="Logo Warung Cerdas">
+                <h1>Warung Cerdas</h1>
+            </div>
+            <div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari makanan atau barang..."
+        oninput="searchProduct()"
+    >
+    <button onclick="searchProduct()">🔍</button>
+</div>
+
+            <nav>
+
+                <a href="#">Beranda</a>
+
+                <a href="#produk">Produk</a>
+
+                <button onclick="bukaKeranjang()">
+                    🛒 Keranjang Kamu
+                    <span id="jumlahKeranjang">0</span>
+                </button>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h2>Selamat Datang di Warung Cerdas</h2>
+
+            <p>
+                Belanja makanan dan berbagai barang dengan mudah.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUK ================= -->
+
+    <section class="container" id="produk">
+
+        <div class="filter">
+
+            <button
+                class="filter-btn active"
+                onclick="filterProduct('semua', this)">
+                Semua
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterProduct('makanan', this)">
+                🍔 Makanan
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterProduct('barang', this)">
+                📦 Barang
+            </button>
+
+        </div>
+
+
+        <div
+            id="productList"
+            class="product-grid">
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART ================= -->
+
+    <div id="cartModal" class="modal">
+
+        <div class="cart-content">
+
+            <div class="cart-header">
+
+                <h2>🛒 Keranjang Belanja</h2>
+
+                <button onclick="tutupKeranjang()">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <!-- Isi Keranjang -->
+
+            <div id="cartItems"></div>
+
+
+            <!-- Total dan Pembayaran -->
+
+            <div class="cart-footer">
+
+                <h3>
+                    Total:
+                    <span id="cartTotal">Rp0</span>
+                </h3>
+
+
+                <!-- QRIS -->
+
+                <button
+                    class="qris-btn"
+                    onclick="pembayaranQRIS()">
+                    💳 Bayar dengan QRIS
+                </button>
+
+
+                <!-- WhatsApp -->
+
+                <button
+                    class="checkout-btn"
+                    onclick="checkoutWhatsApp()">
+                    📱 Checkout WhatsApp
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL QRIS ================= -->
+
+    <div id="qrisModal" class="qris-modal">
+
+        <div class="qris-box">
+
+            <button
+                class="close-qris"
+                onclick="tutupQRIS()">
+                ×
+            </button>
+
+
+            <h2>💳 Pembayaran QRIS</h2>
+
+
+            <p>
+                Total pembayaran:
+            </p>
+
+
+            <h2 id="qrisTotal">
+                Rp0
+            </h2>
+
+
+            <img
+    src="./images/qris.png"
+    alt="QRIS"
+    class="qris-image"
+    style="width:250px; height:250px; object-fit:contain;"
+>
+
+
+            <p>
+                Scan QRIS di atas untuk melakukan pembayaran.
+                </p>
+                <p>
+                Setelah Selesai Melakukan transaksi DiMohon Untuk Mengrim Bukti Transfer Ya 🙇🏻‍♀️
+            </p>
+            <p>Jika Sudah Melakukan Pembayaran, Silahkan di Klik Tombol Di Bawah Ini
+
+            </p>
+
+
+            <button
+                class="sudah-bayar-btn"
+                onclick="sudahBayar()">
+                ✅ Saya Sudah Bayar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Warung Cerdas.
+            Semua Hak Dilindungi.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

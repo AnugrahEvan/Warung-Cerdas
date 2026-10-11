@@ -150,127 +150,127 @@ const products = [
         id: 21,
         name: "Spidol",
         category: "barang",
-        price: 5000,
+        price: 10000,
         image: "images/barang1.jpg"
     },
     {
         id: 22,
         name: "Pena Merah",
         category: "barang",
-        price: 3000,
+        price: 6000,
         image: "images/barang2.jpg"
     },
     {
         id: 23,
         name: "Pensil",
         category: "barang",
-        price: 2500,
+        price: 3000,
         image: "images/barang3.png"
     },
     {
         id: 24,
         name: "Penggaris",
         category: "barang",
-        price: 4000,
+        price: 5000,
         image: "images/barang4.jpg"
     },
     {
         id: 25,
         name: "Type-X",
         category: "barang",
-        price: 6000,
+        price: 8000,
         image: "images/barang5.jpg"
     },
     {
         id: 26,
         name: "Pena Hitam",
         category: "barang",
-        price: 3000,
+        price: 7000,
         image: "images/barang6.jpg"
     },
     {
         id: 27,
         name: "Sampul Buku",
         category: "barang",
-        price: 5000,
+        price: 2000,
         image: "images/barang7.jpg"
     },
+    
     {
         id: 28,
-        name: "Isi Binder Kecil/Besar",
+        name: "Isi Binder Kecil",
         category: "barang",
-        price: 16000,
-        priceText: "Rp13.000 / Rp16.000",
+        price: 13000,
         image: "images/barang8.jpg"
     },
     {
         id: 29,
         name: "Sapu Kelas",
         category: "barang",
-        price: 20000,
+        price: 28000,
         image: "images/barang9.jpg"
     },
     {
         id: 30,
         name: "Sekop",
         category: "barang",
-        price: 6000,
+        price: 15000,
         image: "images/barang10.jpg"
     },
     {
         id: 31,
         name: "Sapu Lidi",
         category: "barang",
-        price: 5000,
+        price: 20000,
         image: "images/barang11.jpg"
     },
     {
         id: 32,
         name: "Penghapus Papan Tulis",
         category: "barang",
-        price: 7000,
+        price: 6000,
         image: "images/barang12.jpg"
     },
     {
         id: 33,
         name: "kain Pel",
         category: "barang",
-        price: 5000,
+        price: 35000,
         image: "images/barang13.jpg"
     },
     {
         id: 34,
         name: "Super Pel",
         category: "barang",
-        price: 4000,
+        price: 18000,
         image: "images/barang14.jpg"
     },
     {
         id: 35,
         name: "Wiper",
         category: "barang",
-        price: 10000,
+        price: 13000,
         image: "images/barang15.jpg"
     },
     {
         id: 36,
         name: "Gunting",
         category: "barang",
-        price: 7000,
+        price: 5000,
         image: "images/barang16.jpg"
     },
     {
         id: 37,
         name: "Tisu",
         category: "barang",
-        price: 6000,
+        price: 12000,
         image: "images/barang17.jpg"
     },
     {
         id: 38,
         name: "Ember",
         category: "barang",
-        price: 15000,
+        price: 12000,
         image: "images/barang18.jpg"
     },
     {
@@ -284,9 +284,16 @@ const products = [
         id: 40,
         name: "Penghapus",
         category: "barang",
-        price: 18000,
+        price: 3000,
         image: "images/barang20.jpg"
-    }
+    },
+    {
+        id: 41,
+        name: "Isi Binder Besar",
+        category: "barang",
+        price: 16000,
+        image: "images/barang8.jpg"
+    },
 ];
 
 
